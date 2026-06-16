@@ -3,7 +3,12 @@ let name2 = prompt('Insert name 2');
 
 if (name1 && name2){
     let response = lovePercentage()
-    alert (`The resul of love within ${name1} and ${name2} is: ${response}%`);
+    
+    if (response > 70){
+        alert (`The result of love within ${name1} and ${name2} is: ${response}%. You love each other like Kanye loves Kanye.`);
+    } else {
+        alert (`The result of love within ${name1} and ${name2} is: ${response}%`);
+    }    
 }else {
     console.log('There is one missing name');
 }
