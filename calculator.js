@@ -6,9 +6,11 @@ if (name1 && name2){
     
     if (response > 70){
         alert (`The result of love within ${name1} and ${name2} is: ${response}%. You love each other like Kanye loves Kanye.`);
-    } else {
+    } else if(response > 30 && response <=70){
         alert (`The result of love within ${name1} and ${name2} is: ${response}%`);
-    }    
+    } else if (response <= 30){
+        alert (`The result of love within ${name1} and ${name2} is: ${response}%, you go toguether like oil and water.`);
+    } 
 }else {
     console.log('There is one missing name');
 }
